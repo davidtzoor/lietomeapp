@@ -2,15 +2,27 @@
   "name": "lietomeapp",
   "version": "1.0.0",
   "private": true,
+  "description": "Lie To Me node application",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./app/server.js | bistre"
   },
+  "main": "./app/server",
+  "engines": {
+    "node": "6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:davidtzoor/lietomeapp.git"
+  },
+  "author": "David Tzoor",
   "dependencies": {
+    "bole": "^3.0.2",
     "compression": "^1.6.2",
     "express": "^4.15.2",
     "hbs": "^4.0.1"
   },
   "devDependencies": {
+    "bistre": "^1.0.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
