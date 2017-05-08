@@ -4,7 +4,7 @@
   "private": true,
   "description": "Lie To Me node application",
   "scripts": {
-    "start": "node ./app/server.js | bistre"
+    "start": "node index.js | bistre"
   },
   "main": "./app/server",
   "engines": {
@@ -16,10 +16,14 @@
   },
   "author": "David Tzoor",
   "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.24.1",
+    "body-parser": "^1.17.1",
     "bole": "^3.0.2",
     "compression": "^1.6.2",
     "express": "^4.15.2",
-    "hbs": "^4.0.1"
+    "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
     "bistre": "^1.0.1",
