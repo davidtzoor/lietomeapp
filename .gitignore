@@ -1,6 +1,10 @@
 # Temp
 tmp/
 
+# Build generated files
+app/*.generated.*
+dist/
+
 # Logs
 logs
 *.log

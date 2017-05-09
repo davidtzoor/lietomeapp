@@ -7,7 +7,7 @@ const home = (req, res) => {
   res.render('site/home');
 };
 
-router.use(express.static(join(__dirname, '../../wwwroot')));
+router.use(express.static(join(__dirname, '../../dist')));
 router.get('/', home);
 
 export default router;

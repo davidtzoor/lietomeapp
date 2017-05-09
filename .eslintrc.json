@@ -4,5 +4,13 @@
         "react",
         "jsx-a11y",
         "import"
-    ]
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+      "comma-dangle": ["error", "never"]
+    }
 }
